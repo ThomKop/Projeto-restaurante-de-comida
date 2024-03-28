@@ -1,4 +1,5 @@
 import java.util.Date;
+import javax.swing.JOptionPane;
  class Pessoa{
     public String nome;
     public String telefone;
@@ -54,7 +55,16 @@ import java.util.Date;
 }
 public class Restaurante{
     public static void main(String[] args) {
-    Pessoa T34 = new Pessoa("Carlos", "123456789", "0987654321", 30);
+    Pessoa T34 = new Pessoa("Carlos ", "123456789 ", "0987654321 ", 30);
     System.out.println(T34.nome+ T34.cpf+ T34.telefone+ T34.idade );
+    
+    String nome_cliente;
+    int idade_cliente;
+    String telefone_cliente;
+    String cpf_cliente;
+    
+    nome_cliente =  JOptionPane.showInputDialog ("Digite o nome do cliente");
+    telefone_cliente =  JOptionPane.showInputDialog ("Digite o telefone do cliente");
+    cpf_cliente =  JOptionPane.showInputDialog ("Digite o cpf do cliente");
     }
 }
